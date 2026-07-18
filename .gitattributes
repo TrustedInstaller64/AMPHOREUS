@@ -1,0 +1,3 @@
+*.gguf !text !filter !merge !diff
+*.safetensors !text !filter !merge !diff
+* !text !filter !merge !diff

@@ -1,0 +1,29 @@
+[2026-07-20 12:45:59.237] [INFO] ========== SCHEDULER TEST SUITE START ==========
+[2026-07-20 12:45:59.237] [INFO] TEST START: test_ema_smoothing
+[2026-07-20 12:45:59.237] [INFO]   input=[100, 50, 100, 50, 100], alpha=0.3, final_ema=84.36
+[2026-07-20 12:45:59.237] [PASS]   EMA 84.36 in [75,90]
+[2026-07-20 12:45:59.237] [INFO] TEST END: test_ema_smoothing
+[2026-07-20 12:45:59.237] [INFO] TEST START: test_min_threads_boundary
+[2026-07-20 12:46:02.365] [INFO]   cpu_count=8, current_threads=7
+[2026-07-20 12:46:02.370] [PASS]   threads=7 >= min_threads(2)
+[2026-07-20 12:46:02.370] [INFO] TEST END: test_min_threads_boundary
+[2026-07-20 12:46:02.370] [INFO] TEST START: test_noise_immunity
+[2026-07-20 12:46:05.379] [INFO]   baseline ema_idle=95.2
+[2026-07-20 12:46:12.408] [INFO]   after noise: ema_idle=79.4
+[2026-07-20 12:46:12.413] [PASS]   EMA change 16.5% < 20%
+[2026-07-20 12:46:12.414] [INFO] TEST END: test_noise_immunity
+[2026-07-20 12:46:12.414] [INFO] TEST START: test_threads_decrease
+[2026-07-20 12:46:14.423] [INFO]   cpu_count=8, initial_threads=7
+[2026-07-20 12:46:14.424] [INFO]   starting 8 CPU workers...
+[2026-07-20 12:46:26.461] [INFO]   after 12s: threads=2
+[2026-07-20 12:46:26.468] [INFO]   workers stopped
+[2026-07-20 12:46:26.470] [PASS]   threads decreased to 2 (assert 2 < 8)
+[2026-07-20 12:46:26.470] [INFO] TEST END: test_threads_decrease
+[2026-07-20 12:46:26.470] [INFO] TEST START: test_threads_recovery
+[2026-07-20 12:46:26.471] [INFO]   cpu_count=8
+[2026-07-20 12:46:26.493] [INFO]   starting 8 workers...
+[2026-07-20 12:46:38.498] [INFO]   under load: threads=2
+[2026-07-20 12:46:56.513] [INFO]   after recovery: threads=6
+[2026-07-20 12:46:56.518] [PASS]   threads recovered to 6 (increased from 2)
+[2026-07-20 12:46:56.518] [INFO] TEST END: test_threads_recovery
+[2026-07-20 12:46:56.519] [INFO] ========== RESULT: 5/5 通过 ==========

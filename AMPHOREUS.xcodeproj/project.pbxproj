@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FD2401F8300F16DE001EA233 /* GlassEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2401EF300F16DE001EA233 /* GlassEffectView.swift */; };
+		FD2401F9300F16DE001EA233 /* ProcessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2401F1300F16DE001EA233 /* ProcessManager.swift */; };
+		FD2401FA300F16DE001EA233 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2401F2300F16DE001EA233 /* SessionManager.swift */; };
+		FD2401FB300F16DE001EA233 /* CommandReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2401F4300F16DE001EA233 /* CommandReferenceView.swift */; };
+		FD2401FC300F16DE001EA233 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2401F5300F16DE001EA233 /* SidebarView.swift */; };
+		FD2401FD300F16DE001EA233 /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2401F6300F16DE001EA233 /* TerminalView.swift */; };
+		FD5A508F300F1D040001483F /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A508B300F1D040001483F /* PerformanceView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FD9B6495300BD75D00517A02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD2401EF300F16DE001EA233 /* GlassEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassEffectView.swift; sourceTree = "<group>"; };
+		FD2401F1300F16DE001EA233 /* ProcessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessManager.swift; sourceTree = "<group>"; };
+		FD2401F2300F16DE001EA233 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		FD2401F4300F16DE001EA233 /* CommandReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandReferenceView.swift; sourceTree = "<group>"; };
+		FD2401F5300F16DE001EA233 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		FD2401F6300F16DE001EA233 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
+		FD5A508B300F1D040001483F /* PerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceView.swift; sourceTree = "<group>"; };
 		FD9B6487300BD75B00517A02 /* AMPHOREUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMPHOREUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9B6494300BD75D00517A02 /* AMPHOREUSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMPHOREUSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9B649E300BD75D00517A02 /* AMPHOREUSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMPHOREUSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +60,11 @@
 		FD9B64A1300BD75D00517A02 /* AMPHOREUSUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AMPHOREUSUITests;
+			sourceTree = "<group>";
+		};
+		FDC533533010C69E000F21E0 /* δ-me13 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "δ-me13";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -72,13 +94,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD24020A300F1AFE001EA233 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FD2401EF300F16DE001EA233 /* GlassEffectView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FD24020B300F1B18001EA233 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD2401F1300F16DE001EA233 /* ProcessManager.swift */,
+				FD2401F2300F16DE001EA233 /* SessionManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD24020E300F1B62001EA233 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD2401F4300F16DE001EA233 /* CommandReferenceView.swift */,
+				FD5A508B300F1D040001483F /* PerformanceView.swift */,
+				FD2401F5300F16DE001EA233 /* SidebarView.swift */,
+				FD2401F6300F16DE001EA233 /* TerminalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FD9B647E300BD75B00517A02 = {
 			isa = PBXGroup;
 			children = (
 				FD9B6489300BD75B00517A02 /* AMPHOREUS */,
+				FD24020E300F1B62001EA233 /* Views */,
+				FD24020B300F1B18001EA233 /* Models */,
+				FD24020A300F1AFE001EA233 /* Components */,
 				FD9B6497300BD75D00517A02 /* AMPHOREUSTests */,
 				FD9B64A1300BD75D00517A02 /* AMPHOREUSUITests */,
 				FD9B6488300BD75B00517A02 /* Products */,
+				FDC533533010C69E000F21E0 /* δ-me13 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +156,7 @@
 				FD9B6483300BD75B00517A02 /* Sources */,
 				FD9B6484300BD75B00517A02 /* Frameworks */,
 				FD9B6485300BD75B00517A02 /* Resources */,
+				FDC533DD3010C6EC000F21E0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -109,6 +164,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				FD9B6489300BD75B00517A02 /* AMPHOREUS */,
+				FDC533533010C69E000F21E0 /* δ-me13 */,
 			);
 			name = AMPHOREUS;
 			packageProductDependencies = (
@@ -231,11 +287,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FDC533DD3010C6EC000F21E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Frameworks/Python.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Clean up stale runs/ from Resources\nRES_DIR=\"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Resources\"\nif [ -d \"${RES_DIR}/runs\" ]; then rm -rf \"${RES_DIR}/runs\"; fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD9B6483300BD75B00517A02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2401F8300F16DE001EA233 /* GlassEffectView.swift in Sources */,
+				FD2401F9300F16DE001EA233 /* ProcessManager.swift in Sources */,
+				FD2401FA300F16DE001EA233 /* SessionManager.swift in Sources */,
+				FD2401FB300F16DE001EA233 /* CommandReferenceView.swift in Sources */,
+				FD2401FC300F16DE001EA233 /* SidebarView.swift in Sources */,
+				FD2401FD300F16DE001EA233 /* TerminalView.swift in Sources */,
+				FD5A508F300F1D040001483F /* PerformanceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +482,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MK29F8V39J;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -409,7 +493,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TrustedInstaller64.AMPHOREUS;
+				PRODUCT_BUNDLE_IDENTIFIER = io.TrustedInstaller.AMPHOREUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -430,10 +514,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MK29F8V39J;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,7 +525,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TrustedInstaller64.AMPHOREUS;
+				PRODUCT_BUNDLE_IDENTIFIER = io.TrustedInstaller.AMPHOREUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -463,7 +547,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TrustedInstaller64.AMPHOREUSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.TrustedInstaller.AMPHOREUSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -484,7 +568,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TrustedInstaller64.AMPHOREUSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.TrustedInstaller.AMPHOREUSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -503,7 +587,7 @@
 				DEVELOPMENT_TEAM = MK29F8V39J;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TrustedInstaller64.AMPHOREUSUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.TrustedInstaller.AMPHOREUSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -522,7 +606,7 @@
 				DEVELOPMENT_TEAM = MK29F8V39J;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TrustedInstaller64.AMPHOREUSUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.TrustedInstaller.AMPHOREUSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;

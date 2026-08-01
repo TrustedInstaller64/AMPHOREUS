@@ -1,0 +1,24 @@
+UI示例工程-MathAtlas/
+
+# Python virtual environment
+/.venv/
+__pycache__/
+*.pyc
+
+# Model files (large, not suitable for git)
+models/
+!models/.gitkeep
+
+# OS and IDE files
+.DS_Store
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+*.log
+*.clog
+models/
+*.gguf
+*.safetensors
